@@ -11,7 +11,7 @@ from config import Config
 from script import Script
 
 
-@trojanz.on_message(filters.private & (filters.document | filters.video))
+@Hg_Anime.on_message(filters.private & (filters.document | filters.video))
 async def confirm_dwnld(client, message):
 
     if message.from_user.id not in Config.AUTH_USERS:
